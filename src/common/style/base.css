@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  user-select: none;
+}
+html {
+  font-size: 16px;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 12px;
+  line-height: 1;
+  overflow: hidden;
+  cursor: default;
+}
+a, button, input, textarea {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+p {
+  user-select: text;
+}
+img {
+  outline: none;
+}
+menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+[contenteditable] {
+  outline: none;
+}
+input, textarea, [contenteditable] {
+  cursor: text;
+}
+svg path[fill=""],
+svg path:not([fill]) {
+  fill: currentColor;
+  shape-rendering: geometricPrecision;
+}
+.chapter-content {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+#app {
+  height: 100vh;
+  background-size: cover;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+}
+#item-bg-left-top,
+#item-bg-left-bottom,
+#item-bg-right-top,
+#item-bg-right-bottom {
+  position: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#item-bg-left-top {
+  left: 0;
+  top: 0;
+}
+#item-bg-left-bottom {
+  left: 0;
+  bottom: 0;
+}
+#item-bg-right-top {
+  right: 0;
+  top: 0;
+}
+#item-bg-right-bottom {
+  right: 0;
+  bottom: 0;
+}
+:focus {
+  outline: none;
+}
+
+::selection {
+  color: #fff;
+}
+
+/* 占位符 */
+::-webkit-input-placeholder {
+  color: #C0CBD4;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  margin-right: 5px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+}

@@ -1,0 +1,108 @@
+/**
+ * 滚动
+ */
+.scroll-y {
+  overflow-y: auto;
+}
+.over-hide {
+  overflow: hidden;
+}
+
+/**
+ * 定位
+ */
+.pos-r {
+  position: relative;
+}
+
+.pos-a {
+  position: absolute;
+}
+
+/**
+ * 鼠标
+ */
+.cursor-p {
+  cursor: pointer;
+}
+
+/**
+ * 选择
+ */
+.selectable {
+  user-select: text;
+}
+
+/**
+ * 翻转
+ */
+.revert-x {
+  transform: rotateY(180deg);
+}
+
+/* 圆形 */
+.circle {
+  border-radius: 50%;
+}
+
+/**
+ * 可拖动区域
+ */
+.drag-area {
+  -webkit-app-region: drag;
+}
+
+/**
+ * 不可拖动区域
+ */
+.nodrag-area {
+  -webkit-app-region: no-drag;
+}
+
+/* 绝对垂直居中 */
+.vertical-center-absolute {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* 相对垂直居中 */
+.vertical-center-relative {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.inline-b {
+  display: inline-block;
+}
+
+/* 绝对水平垂直居中 */
+.vertical-horizon-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+/* 毛玻璃效果 */
+.glass-20 {
+  filter: blur(20px);
+}
+
+/* 块元素 */
+.display-block {
+  display: block;
+}
+
+/* 向右浮动 */
+.float-right {
+  float: right;
+}
+
+/* white-space */
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+  line-height: normal;
+}

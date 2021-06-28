@@ -1,10 +1,25 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
-
+import postcssImport from "postcss-import"
+import autoprefixer from 'autoprefixer'
+import precss from 'precss'
+import postcssInherit from 'postcss-inherit'
+import postcssUtilities from 'postcss-utilities'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
+  css:{
+    postcss:{
+      plugins:[
+        postcssImport,
+        autoprefixer,
+        precss,
+        postcssInherit,
+        postcssUtilities
+      ]
+    }
+  },
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src') // 设置 `@` 指向 `src` 目录
