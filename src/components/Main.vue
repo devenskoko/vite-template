@@ -1,6 +1,6 @@
 <template>
-  <main class="w-full h-full box-border flex flex-col justify-between bg-gray-100">
-    <div class="relative box-border w-full mb-3 h-16">
+  <main class="w-full h-full box-border flex flex-column flex-jc-between">
+    <div class="relative box-border w-full mb-3 h-60">
       <Header />
     </div>
     <div class="relative box-border w-full flex flex-1 justify-between">

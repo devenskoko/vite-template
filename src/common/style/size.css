@@ -4,12 +4,11 @@
 .h-full {
   height: 100%;
 }
-.w-80 {
-  width: 80px;
+
+@for $i from 4 to 200 {
+  .w-$i { width: $(i)px; }
 }
-.w-100 {
-  width: 100px;
-}
-.w-120 {
-  width: 120px;
+
+@for $i from 4 to 200 {
+  .h-$i { height: $(i)px; }
 }

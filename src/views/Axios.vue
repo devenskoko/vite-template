@@ -4,7 +4,7 @@
     <div class="flex justify-center items-center">
       <div class="card-header flex justify-between items-center">
         <span>XPoet</span>
-        <button class="button" type="text" @click="getUserInfo">点击获取XPoet信息</button>
+        <button class="button" @click="getUserInfo">点击获取XPoet信息</button>
       </div>
       <div class="info-list-box">
         <div class="text item" v-if="userInfo?.name">name: {{ userInfo?.name }}</div>
