@@ -1,0 +1,42 @@
+/**
+ * 文字
+ */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/** 文字截断，省略号 */
+.text-trunc {
+  @util truncate;
+}
+
+.text-trunc-2 {
+  @util truncate(2, 1.4);
+}
+
+.text-trunc-3 {
+  @util truncate(3, 1.4);
+  height: auto;
+}
+
+.word-wrap {
+  @util word-wrap;
+}
+
+.bold-6 {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+/* 字号 */
+@for $i from 2 through 100 {
+  .text-#{$i} {
+    font-size: #{$i}px;
+  }
+}

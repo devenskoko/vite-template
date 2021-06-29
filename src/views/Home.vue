@@ -5,7 +5,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" type="javascript">
 import { defineComponent } from 'vue'
 
 export default defineComponent({

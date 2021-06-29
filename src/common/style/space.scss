@@ -251,6 +251,6 @@
   margin-top: auto;
 }
 .mx-auto {
-  @inherit: .ml-auto;
-  @inherit: .mr-auto;
+  @extend .ml-auto;
+  @extend .mr-auto;
 }

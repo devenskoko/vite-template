@@ -1,29 +1,16 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { resolve, join } from 'path'
-import postcssImport from 'postcss-import'
+import { resolve } from 'path'
 import autoprefixer from 'autoprefixer'
-import precss from 'precss'
-import postcssInherit from 'postcss-inherit'
-import postcssUtilities from 'postcss-utilities'
-import postcssFor from 'postcss-for'
-import postcssEach from 'postcss-each'
-
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
+    vue()
   ],
   css: {
     postcss: {
       plugins: [
-        postcssImport,
-        autoprefixer,
-        precss,
-        postcssInherit,
-        postcssUtilities,
-        postcssFor,
-        postcssEach
+        autoprefixer()
       ]
     }
   },

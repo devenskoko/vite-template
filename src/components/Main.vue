@@ -17,7 +17,7 @@
   </main>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts" setup type="javascript">
 import Header from '@/components/Header.vue'
 import Nav from '@/components/Nav.vue'
 import { defineProps, useContext, inject } from 'vue'

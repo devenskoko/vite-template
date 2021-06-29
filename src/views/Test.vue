@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" type="javascript">
 import { defineComponent, ref } from 'vue'
 
 export default defineComponent({

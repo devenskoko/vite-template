@@ -8,67 +8,67 @@
   display: inline-flex;
 }
 .flex-column {
-  @inherit: .flex;
+  @extend .flex;
   flex-direction: column;
 }
 .flex-row {
-  @inherit: .flex;
+  @extend .flex;
   flex-direction: row;
 }
 .flex-ai-start {
-  @inherit: .flex;
+  @extend .flex;
   align-items: flex-start;
 }
 .flex-ai-center {
-  @inherit: .flex;
+  @extend .flex;
   align-items: center;
 }
 .flex-ai-end {
-  @inherit: .flex;
+  @extend .flex;
   align-items: flex-end;
 }
 .flex-ai-baseline {
-  @inherit: .flex;
+  @extend .flex;
   align-items: baseline;
 }
 .flex-jc-center {
-  @inherit: .flex;
+  @extend .flex;
   justify-content: center;
 }
 .flex-jc-end {
-  @inherit: .flex;
+  @extend .flex;
   justify-content: flex-end;
 }
 .flex-ai-jc-center {
-  @inherit: .flex-ai-center;
+  @extend .flex-ai-center;
   justify-content: center;
 }
 .flex-column-ai-jc-center {
-  @inherit: .flex-ai-jc-center;
+  @extend .flex-ai-jc-center;
   flex-direction: column;
 }
 .flex-column-center {
-  @inherit: .flex-column;
+  @extend .flex-column;
   align-items: center;
 }
 .flex-column-jc-center {
-  @inherit: .flex-column;
+  @extend .flex-column;
   justify-content: center;
 }
 .flex-jc-between {
-  @inherit: .flex;
+  @extend .flex;
   justify-content: space-between;
 }
 .flex-jc-around {
-  @inherit: .flex;
+  @extend .flex;
   justify-content: space-around;
 }
 .flex-inline-ai-center {
-  @inherit: .flex-inline;
+  @extend .flex-inline;
   align-items: center;
 }
 .flex-inline-ai-jc-center {
-  @inherit: .flex-inline-ai-center;
+  @extend .flex-inline-ai-center;
   justify-content: center;
 }
 

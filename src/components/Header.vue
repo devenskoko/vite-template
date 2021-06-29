@@ -5,7 +5,7 @@
   </div>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts" setup type="javascript">
 import { useRouter } from 'vue-router'
 
 // eslint-disable-next-line no-unused-vars
