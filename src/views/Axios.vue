@@ -23,9 +23,11 @@ const store = useStore()
 const reactiveData = reactive({
   userInfo: computed(() => store.getters['axiosModule/userInfo'])
 })
+
 const getUserInfo = () => {
   store.dispatch('axiosModule/AXIOS_DATA')
 }
+
 const { userInfo } = { ...toRefs(reactiveData) }
 </script>
 
