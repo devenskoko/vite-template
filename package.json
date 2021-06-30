@@ -9,13 +9,8 @@
     "lint-fix": "eslint --fix ./src --ext .vue,.js,.ts",
     "prepare": "husky install"
   },
-  "hooks": {
-    "pre-commit": "lint-staged"
-  },
   "lint-staged": {
-    "src/**": [
-      "prettier --write ./src"
-    ]
+    "*.{vue,js,ts}": "prettier --write ./src"
   },
   "dependencies": {
     "@vueuse/core": "^5.0.3",
