@@ -14,9 +14,8 @@
     }
   },
   "lint-staged": {
-    "*.{ts,vue,js}": [
-      "prettier --config .prettierrc --write",
-      "eslint --fix",
+    "src/": [
+      "prettier --write ./src",
       "git add"
     ]
   },
