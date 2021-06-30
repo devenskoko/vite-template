@@ -8,6 +8,18 @@
     "lint": "eslint ./src --ext .vue,.js,.ts",
     "lint-fix": "eslint --fix ./src --ext .vue,.js,.ts"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,vue,js}": [
+      "prettier --write ./src",
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "dependencies": {
     "@vueuse/core": "^5.0.3",
     "axios": "^0.21.1",
@@ -27,6 +39,8 @@
     "eslint-plugin-jest": "^24.3.5",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.8.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "prettier": "^2.2.1",
     "sass": "^1.35.1",
     "typescript": "^4.3.2",

@@ -22,15 +22,17 @@ module.exports = {
     'import/no-absolute-path': 'off',
     'import/no-extraneous-dependencies': 'off',
     'vue/no-multiple-template-root': 'off',
-    "prettier/prettier": "off",
-    "no-unused-vars": 'off',
+    'prettier/prettier': 'off',
+    'no-unused-vars': 'off',
     'no-param-reassign': [
       'error',
       {
         props: true,
         ignorePropertyModificationsFor: ['state', 'config']
       }
-    ]
+    ],
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   },
   settings: {}
 }
