@@ -10,7 +10,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{vue,js,ts}": "prettier --write ./src"
+    "*.{vue,js,ts}": ["prettier --write ./src", "git add"]
   },
   "dependencies": {
     "@vueuse/core": "^5.0.3",

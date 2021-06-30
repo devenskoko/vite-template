@@ -7,8 +7,8 @@
 </template>
 
 <script lang="ts" setup type="javascript">
-import {reactive, computed, toRefs} from 'vue'
-import {useStore} from 'vuex'
+import { reactive, computed, toRefs } from 'vue'
+import { useStore } from 'vuex'
 
 const store = useStore()
 
