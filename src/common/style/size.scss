@@ -13,6 +13,6 @@
 
 @for $i from 4 through 200 {
   .h-#{$i} {
-    width: #{$i}px;
+    height: #{$i}px;
   }
 }
