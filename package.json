@@ -10,7 +10,10 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{vue,js,ts,scss,css}": ["prettier --write ./src", "git add"]
+    "*.{vue,js,ts,scss,css}": [
+      "prettier --write ./src",
+      "git add"
+    ]
   },
   "dependencies": {
     "@vueuse/core": "^5.0.3",
@@ -33,6 +36,7 @@
     "eslint-plugin-vue": "^7.8.0",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
+    "postcss": "^8.3.5",
     "prettier": "^2.2.1",
     "sass": "^1.35.1",
     "typescript": "^4.3.2",
