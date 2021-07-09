@@ -4,13 +4,17 @@
   box-sizing: border-box;
   user-select: none;
 }
+
 html {
   font-size: 16px;
+  height: 100%;
 }
+
 body {
   margin: 0 auto;
   padding: 0;
   width: 100%;
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   font-size: 12px;
@@ -18,6 +22,7 @@ body {
   overflow: hidden;
   cursor: default;
 }
+
 a,
 button,
 input,
@@ -26,9 +31,11 @@ textarea {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   outline: none;
 }
+
 a {
   text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -38,30 +45,42 @@ h6,
 p {
   margin: 0;
 }
+
 p {
   user-select: text;
 }
+
 img {
   outline: none;
 }
+
 menu {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 [contenteditable] {
   outline: none;
 }
+
 input,
 textarea,
 [contenteditable] {
   cursor: text;
 }
+
 svg path[fill=''],
 svg path:not([fill]) {
   fill: currentColor;
   shape-rendering: geometricPrecision;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
   width: 100%;
   height: 100%;

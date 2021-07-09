@@ -36,7 +36,9 @@
 }
 /* 字号 */
 @for $i from 2 through 100 {
-  .text-#{$i} {
-    font-size: #{$i}px;
+  @if $i%2 == 0 {
+    .text-#{$i} {
+      font-size: #{$i}px;
+    }
   }
 }

@@ -2,7 +2,7 @@
   <aside class="nav relative w-full h-full box-border bg-white">
     <ul class="nav-list">
       <li
-        class="nav-item flex-center box-border w-full h-16 flex justify-center items-center cursor-pointer"
+        class="nav-item box-border w-full h-60 cursor-pointer flex-ai-center flex-jc-center text-16"
         v-for="(nav, index) in navList"
         :key="index"
         :class="{ active: nav.isActive }"

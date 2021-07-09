@@ -6,13 +6,17 @@
 }
 
 @for $i from 4 through 200 {
-  .w-#{$i} {
-    width: #{$i}px;
+  @if $i%2 == 0 {
+    .w-#{$i} {
+      width: #{$i}px;
+    }
   }
 }
 
 @for $i from 4 through 200 {
-  .h-#{$i} {
-    height: #{$i}px;
+  @if $i%2 == 0 {
+    .h-#{$i} {
+      height: #{$i}px;
+    }
   }
 }
